@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess</title>
+    <link rel="icon" href = "favicon.ico">
+    <link rel="stylesheet" href = "cschess.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+        <div class = 'left'>
+
+            <div id = 'bartitle'><h1> CULTURE CHESS </h1></div>
+
+            <p>It is <span id = "players"></span> go. </p>
+            <p id = "info-display"></p>
+
+
+            <div id = 'Ldiscard'>
+                <h2>PAWN PROMOTION:</h2>
+                <p id = 'promotion-display'> </p>
+                <button id = 'qb'><i class="fa-solid fa-chess-queen"></i></button>
+                <button id = 'bb'><i class="fa-solid fa-chess-bishop"></i></button>
+                <button id = 'rb'><i class="fa-solid fa-chess-rook"></i></button>
+                <button id = 'kb'><i class="fa-solid fa-chess-knight"></i></button>
+            </div>
+
+        </div>
+
+
+
+        </div>
+
+        <div class = 'right'>
+
+            <div id = 'gameBoard'></div>
+            <div id = 'Rdiscard'></div>
+        </div>
+
+
+    <audio  id ='capture'>
+      <source src = 'capture.mp3' typeof="audio/mpeg">
+    </audio>
+
+        <audio  id ='place'>
+            <source src = 'place.mp3' typeof="audio/mpeg">
+        </audio>
+        <audio  id ='fanfare'>
+            <source src = 'fanfare.mp3' typeof="audio/mpeg">
+        </audio>
+
+    <script src='pieces.js'></script>
+    <script src='app.js'></script>
+</body>
+</html>

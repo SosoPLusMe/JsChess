@@ -1,0 +1,150 @@
+html{
+    font-family: Bahnschrift;
+}
+
+root{
+    --bsize: 1;
+}
+
+div{
+
+}
+#gameBoard {
+    width: calc(20em * 2);
+    height: calc(20em * 2);
+    min-height: 20em;
+    min-width: 20em;
+    display: flex;
+    flex-wrap: wrap;
+    border: 30px outset rgb(94, 41, 5);
+    border-image: -o-linear-gradient(-45deg, black, #e40000);
+    margin: auto;
+    position: relative;
+    top: 100px;
+
+}
+
+p {
+    text-align: left;
+    font-size: 2.5em;
+
+}
+
+.square {
+    width: calc(2.5em * 2);
+    height: calc(2.5em * 2);
+    position: relative;
+
+}
+.square svg {
+    width: calc(30px * 2);
+    height: calc(30px * 2);
+    margin: calc(5px * 2);
+
+    position: relative;
+    z-index: -9;
+}
+
+path {
+    position: relative;
+    z-index: -10;
+}
+
+.piece{
+    position: relative;
+    z-index: 9;
+
+}
+
+.col1{
+    background-color: rgba(241, 136, 78, 0.44);
+}
+
+.col2{
+    background-color: rgba(207, 141, 107, 0.99);
+}
+
+.white{
+    fill: #ffffff;
+
+}
+
+.black{
+    fill: #000000;
+
+}
+h1{
+    font-size: 4em;
+    text-align: left;
+
+}
+
+.left{
+    border: #0c0b0b 10px ridge;
+    vertical-align: middle;
+    position: fixed;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+
+    display: block;
+    max-width: 31.25em;
+    overflow-wrap: break-word;
+
+
+}
+
+.right{
+    margin-left: 40%;
+
+}
+#bartitle{
+    border-bottom: black solid 1px;
+}
+
+#main{
+    border: black solid 1px;
+}
+
+#info-display{
+    overflow-wrap: break-word;
+}
+
+#players{
+    overflow-wrap: break-word;
+}
+
+#Ldiscard p{
+    width: 100%;
+    font-size: 1em;
+}
+h2{
+    width: 100%;
+    text-align: left;
+    font-size: 2em;
+
+}
+#Ldiscard{
+    position: absolute;
+    display:-ms-flexbox;
+    top:  72%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow-block: scroll;
+    inline-size: 100%;
+    overflow-wrap: break-word;
+    border-top: 10px outset #000000;
+
+}
+
+button{
+    color: #838383;
+    border: none;
+    background: none;
+    font-size: 5em;
+    width: 24%;
+
+}
+
+button:hover{
+    color: #000000;
+}
